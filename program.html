@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ebecf0;
+    }
+    .login-form{
+        width: 350px;
+        height: auto;
+    }
+    .form-title{
+        text-align: center;
+        padding: 25px 0;
+    }
+    label{
+        display: block;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    input{
+        margin-right: 8px;
+        box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+        width: 100%;
+        transition: all 0.7s ease-in-out;
+        appearance: none;
+        -webkit-appearance: none;
+    }
+    button, input{
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+        border-radius: 320px;
+        padding: 16px;
+        background-color: #ebecf0;
+        text-shadow: 1px 1px 0 #fff;
+    }
+    input:focus{
+        box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+    }
+    button{
+        color: #61677c;
+        font-weight: bold;
+        box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    button:hover{
+        box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+    }
+    button:active{
+        box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="login-form ">
+            <div class="form-title">
+                <h1> Login </h1>
+            </div>
+            <label for="username"><input type="text" placeholder="Username" name="Username"></label>
+            <label for="password"><input type="password" placeholder="password" name="password"></label>
+            <div class="remember-me">
+                <label class="input-checkbox" type="checkbox" name="remember-me">
+                    <span class="txt1"> Remember me click here.</span>
+                </label>
+            </div>
+            <button class="red" type="buton"><i class="fa fa-lock"></i> Login </button>
+        </div>    
+    </div>
+</body>
+</html>
